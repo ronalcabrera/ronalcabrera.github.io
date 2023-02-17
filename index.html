@@ -236,7 +236,7 @@
       (async () => {
           console.log("Cargando modelo 1...")
           modelo = await tf.loadLayersModel(
-            "https://raw.githubusercontent.com/ronalcabrera/ronalcabrera.github.io/main/Modelos/exportacion/modelo_denso/model.json");
+            "https://raw.githubusercontent.com/ronalcabrera/ronalcabrera.github.io/main/Modelos/exportacion/modelo_denso/model.json", {mode: "no-cors"});
           console.log("Modelo 1 cargado...");
 
           console.log("Cargando modelo 2...");
